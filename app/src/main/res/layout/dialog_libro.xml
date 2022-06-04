@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_baseline_bookmark_add_24"
+            app:tint="@color/colorMorado"/>
+
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del Libro"
+            android:maxLines="1"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <EditText
+            android:id="@+id/edtAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor"
+            android:maxLines="1"
+            android:inputType="textCapWords"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edtCategory"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Género"
+                android:inputType="textCapWords"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/edtEditorial"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:hint="Editorial"
+                android:inputType="textCapWords"
+                android:maxLines="1" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtResume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Resumen"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:minLines="3"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnRegisterLibro"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:text="Registrar"
+            android:backgroundTint="@color/colorMorado"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
